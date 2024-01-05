@@ -1,0 +1,199 @@
+.entete, .footer {
+    width: 100%;
+    height: 120px;
+    background:url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 185px 120px 1fr  ;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    z-index: 2;
+    
+}
+.footer{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+}
+.myname {
+    font-weight: bold;
+    font-size: 29px;
+    margin-left: 6px;
+    font-family: 'Dela Gothic One', cursive;
+    color: aliceblue;
+}
+
+.myname1 {
+    font-weight: bold;
+    font-size: 29px;
+    margin-left: 6px;
+    font-family: 'Dela Gothic One', cursive;
+    color: red;
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-entete {
+    height: 20px;
+    width: 20px;
+    background: rgb(138, 202, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px 0px 7px 0px;
+    font-family: 'Dela Gothic One', cursive;
+    cursor: pointer;
+    color: rgb(72, 72, 72);
+    margin-left: 22px;
+    box-shadow: 0 20px 40px rgba(0,0,0.5);
+    font-size: 1vh;
+
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.menu-nav{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    height: 100PX;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a{
+    display: flex;
+    position: relative;
+    transform: translate(-50,-50%);
+    color: #1670f0;
+    text-shadow: 0 1px 2px rgb(156, 250, 247);
+    font-family: 'Oxanium', cursive;
+    font-weight: bold;
+    height: 50%;
+    width: 80%;
+    font-size: 4vh;
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    border-radius: 5px 5px 5px 5px;
+}
+a:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+a:hover span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,#0c002b,#1779ff);
+    animation: animate1 linear 2s infinite;
+}
+a:hover span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+    animation: animate2 linear 2s infinite;
+    animation-delay: 1s;
+}
+
+a:hover span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,#0c002b,#1779ff);
+    animation: animate3 linear 2s infinite;
+}
+
+a:hover span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top,#0c002b,#1779ff);
+    animation: animate4 linear 2s infinite;
+    animation-delay: 1s;
+}
+
+
+
+
+@keyframes animate1{
+    
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate2{
+    
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+
+@keyframes animate3{
+    
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate4{
+    
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.item-entete:hover {
+    transform: scale(1.15);
+    transition: 0.8s;
+    background: rgb(132, 210, 197);
+    color: rgb(45, 44, 44);
+    border-radius: 0px 7px 0px 7px;
+}
