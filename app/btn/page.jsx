@@ -1,11 +1,16 @@
 import { ButtonEclair } from "../components/bouttons/button-eclair/button-eclair";
-
+import './style.css'
 
 export default function Eclair() {
 
     return (
         <>
-           <ButtonEclair/>
+            <div className="container">
+                <ButtonEclair/>
+                <ButtonEclair/>
+                <ButtonEclair/>
+
+            </div>          
         </>
     );
 }
